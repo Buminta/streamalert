@@ -90,6 +90,12 @@ def get_alert(index=0):
         'outputs': [
             'slack:unit_test_channel'
         ],
+        'context': {
+            'pagerduty-incident': {
+                'assigned_user':'valid_user',
+                'assigned_policy': 'valid_policy'
+            }
+        },
         'source_service': 's3',
         'source_entity': 'corp-prefix.prod.cb.region',
         'log_type': 'json',

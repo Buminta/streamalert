@@ -133,6 +133,14 @@ req_subkeys
 
 This feature should be avoided, but it is useful if you defined a loose schema to trade flexibility for safety; see `Schemas <conf-schemas.html#json-example-osquery>`_.
 
+context
+~~~~~~~~~~~
+
+``context`` is an optional argument which defines an extra field of information to pass on inside
+of the alert record but without affecting schemas. It can be particulary helpful to pass data to
+an output and utilize within the output processing code.
+
+
 Examples:
 
 .. code-block:: python
